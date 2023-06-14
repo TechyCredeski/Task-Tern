@@ -1,11 +1,9 @@
-
+import Landing from "./pages/Landing"
 
 function App() {
 
   return (
-    <>
-    <p>Task-Tern</p>
-    </>
+    <Landing/>
   )
 }
 
