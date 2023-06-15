@@ -2,6 +2,6 @@
 
 export default function Landing() {
 return (
-    <div>Landing</div>
+    <h1 className="text-3xl font-bold underline">Landing</h1>
 )
 }
