@@ -21,9 +21,11 @@ export default {
         mainCl: '#aa2ca0',
         white: '#fff',
       },
-    
-    },
+      },
   },
-  plugins: [],
+
+
+  plugins: [
+  ],
 }
 
