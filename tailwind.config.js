@@ -21,6 +21,9 @@ export default {
         mainCl: '#aa2ca0',
         white: '#fff',
       },
+      backgroundImage: {
+        ctaSection:" url('/src/asset/images/blob-bg.svg')"
+      }
       },
   },
 
