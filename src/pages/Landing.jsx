@@ -2,6 +2,7 @@ import Nav from "../components/Nav"
 import Hero from "../components/Hero"
 import Features from "../layouts/Features"
 import Getstartedmain from "../components/Getstartedmain"
+import Footer from "../layouts/Footer"
 
 export default function Landing() {
 return (
@@ -12,6 +13,7 @@ return (
     <Features/>
     <Getstartedmain/>
     </section>
+    <Footer/>
     </div>
 
 )
