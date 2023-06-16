@@ -2,7 +2,7 @@ import Feature from "../components/Feature"
 
 export default function Features() {
 return (
-<section className="mt-20 flex flex-col justify-between mb-20 md:flex-row md:flex-wrap">
+<section className="mt-20 flex flex-col justify-between mb-9 md:flex-row md:flex-wrap">
 <Feature 
 title = {'Create Tasks Effortlessly'} 
 content = {"Say goodbye to messy sticky notes and scattered to-do lists. With TaskTern, creating tasks is a breeze. Simply type in your task, set a due date, and add any necessary details. Whether it's a personal project, work assignment, or a reminder, We've has got you covered."}
