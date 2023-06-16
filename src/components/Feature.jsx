@@ -1,7 +1,9 @@
-
+import lottie from 'lottie-web';
+import { defineElement } from 'lord-icon-element';
 
 // eslint-disable-next-line react/prop-types
 export default function Feature({title, content, imgSrc}) {
+    defineElement(lottie.loadAnimation);
     const iconStyle = {
         width: '120px', 
         height: '120px', 

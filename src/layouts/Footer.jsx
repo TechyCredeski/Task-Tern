@@ -9,7 +9,7 @@ return (
 <p className="font-thin text-xs text-center">&copy; 2023 Task-Tern. All rights reserved.</p>
 </section>
 
-<ul className="mt-5 text-center w-9/12 mx-auto flex-col mb-5 md:w-3/12 md:mt-0 md:mb-0 md:text-left md:w-1/2">
+<ul className="mt-5 text-center w-9/12 mx-auto flex-col mb-5 md:w-3/12 md:mt-0 md:mb-0 md:text-left">
     <h5 className="text-xl text-black mb-2 font-bold text-center">Quick Links</h5>
     <span className=" flex justify-between md:flex-row">
     <li className="mb-1"><p>About</p></li>

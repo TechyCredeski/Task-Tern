@@ -1,6 +1,11 @@
+import lottie from 'lottie-web';
+import { defineElement } from 'lord-icon-element';
+
+
 
 
 export default function Getstartedmain() {
+    defineElement(lottie.loadAnimation);
     const iconStyle = {
         width: '120px', 
         height: '120px', 
