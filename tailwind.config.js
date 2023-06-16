@@ -10,13 +10,18 @@ export default {
       lg: '976px',
       xl: '1440px',
     },
+    fontFamily: {
+      openSans: ['Open Sans', 'sans-serif'],
+      pacifico: ['Pacifico', 'cursive'],
+    },
     extend: {
       colors: {
         lightBG: '#E3B8DE',
         darkBG: '#1e071c',
         mainCl: '#aa2ca0',
         white: '#fff',
-      }
+      },
+    
     },
   },
   plugins: [],
