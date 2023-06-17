@@ -3,8 +3,8 @@
 export default function Signup() {
 return (
 
-<div className= "bg-purple-100 h-full flex content-center">
-    <div className="flex flex-col justify-between m-auto mt-8 p-3 w-4/5 bg-white  mb-5 md:flex-row rounded-md">
+<div className= "h-full flex content-center">
+    <div className="flex flex-col justify-between m-auto mt-8 p-3 w-4/5 bg-purple-100  mb-5 md:flex-row rounded-md">
         <div className="bg-purple-400 hidden  p-5 rounded-md md:w-1/2  md:block">
         <h1 className="text-2xl font-pacifico text-black">Task-Tern</h1>
         <h2 className="text-3xl mt-12 font-pacifico text-black mb-7 md:mb-9">From chaos to control: Transform your life with our seamless todo app.</h2>
@@ -14,7 +14,7 @@ return (
 
         <div className="p-5 mt-5 md:mt-0 md:ml-7 md:w-1/2 ">
             <h3 className="font-pacifico text-2xl mb-3">Get Started</h3>
-            <p className="mb-10">Create your account</p>
+            <p className="mb-7">Create your account</p>
 
             <form action="" className="flex flex-col">
                 <span className="flex flex-col mb-5">

@@ -10,7 +10,7 @@ return (
             <p className="mb-6 md:mb-9">Stay organized and supercharge your productivity with TaskTern, the ultimate todo app designed to simplify your life.
                 With its intuitive interface and powerful features, TaskTern helps you manage your tasks, 
                 prioritize your goals, and accomplish more every day.</p>
-            <button className="p-3 px-10 text-lg border border-purple-500 rounded-md hover:bg-purple-400 md:px-9 md:mx-0">Get Started</button>
+            <button className="p-3 px-10 text-lg border border-purple-500 rounded-md hover:bg-purple-400 hover:font-bold md:px-9 md:mx-0">Get Started</button>
         </div>
     </div>
 </>

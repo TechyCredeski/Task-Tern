@@ -15,7 +15,7 @@ return (
     <div className="flex justify-center align-middle">
     <lord-icon 
     style={iconStyle}
-    trigger="loop" 
+    trigger="hover" 
     src={`/src/assets/icons/wired-lineal-1725-exit-sign.json`}>
     </lord-icon>
     </div>
