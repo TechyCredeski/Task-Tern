@@ -1,9 +1,14 @@
-import Landing from "./pages/Landing"
+
+// import Landing from "./pages/Landing";
+import Signup from "./pages/Signup";
 
 function App() {
 
   return (
-    <Landing />
+  <>
+      {/* <Landing /> */}
+      <Signup/>
+  </>
   )
 }
 
