@@ -2,7 +2,7 @@ import Feature from "../components/Feature"
 
 export default function Features() {
 return (
-<section className="mt-20 flex flex-col justify-between mb-9 md:flex-row md:flex-wrap">
+<section className="mt-20 flex flex-col justify-between mb-9 md:flex-row md:flex-wrap" id="features">
 <Feature
 imgSrc = {"wired-outline-245-edit-document.json"}
 title = {'Create Tasks Effortlessly'} 

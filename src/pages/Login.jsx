@@ -1,6 +1,8 @@
 import lottie from 'lottie-web';
 import { defineElement } from 'lord-icon-element';
 import Google from '../assets/icons/Google';
+import { Link } from 'react-router-dom';
+
 
 export default function Login() {
     defineElement(lottie.loadAnimation);
@@ -32,9 +34,10 @@ export default function Login() {
                 Sign In to continue.
                 </h2>
                 
-                <p className="text-sm my-5 mb-12">Don&apos;t have an account? <span className="text-purple-500 hover:underline font-medium">Create an account</span> 
+                <p className="text-sm my-5 mb-12">Don&apos;t have an account? 
+                <Link to={`/signup`}><span className="text-purple-500 hover:underline font-medium"> Create an account</span></Link> 
                 <br />
-                it takes less than a minute.</p>
+                It takes less than a minute.</p>
 
                 <form action="" className="flex flex-col">
                     

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 export default function Signup() {
@@ -48,7 +49,9 @@ return (
                 <button type="submit" className="p-3 my-5 text-lg border border-black rounded-md hover:bg-black hover:text-white hover:font-bold md:px-7 md:mx-0 ">Sign Up</button>
             </form>
 
-            <p className="text-center">Have an account? <span className="text-purple-500 hover:underline font-medium">Login</span> </p>
+            <p className="text-center">Have an account? 
+            <Link to={`/login`}><span className="text-purple-500 hover:underline font-medium"> Login</span> </Link>
+            </p> 
         </div>
     </div>
 </div>
