@@ -4,7 +4,9 @@ import Google from '../assets/icons/Google';
 import { Link } from 'react-router-dom';
 
 
+
 export default function Login() {
+
     defineElement(lottie.loadAnimation);
     const iconStyle = {
         width: '120px', 
@@ -13,7 +15,7 @@ export default function Login() {
     return (
 
     <div className= "h-full flex items-center">
-        <div className="flex flex-col justify-between m-auto mt-8 p-3 w-4/5 bg-purple-100  mb-5 md:flex-row rounded-md">
+        <div className="flex flex-col justify-between m-auto mt-32 p-3 w-4/5 bg-purple-100  mb-5 md:flex-row md:mt-8 rounded-md">
             <div className="bg-purple-400 hidden  p-5 rounded-md md:w-1/2  md:block">
             <h1 className="text-3xl font-pacifico text-black mb-7 md:mb-9">Privacy and Security First.</h1>
             <div className="flex justify-center align-middle">

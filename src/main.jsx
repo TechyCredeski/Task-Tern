@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import ErrorPage from './pages/Error-page.jsx';
 import Signup from './pages/Signup.jsx';
+import Dashboard from './pages/Dashboard.jsx';
 import { createBrowserRouter, RouterProvider,} from "react-router-dom";
 import Login from './pages/Login.jsx';
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login/>,
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard/>,
   },
   {
     path: "*",

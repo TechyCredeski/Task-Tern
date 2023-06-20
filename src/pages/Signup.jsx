@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup"; 
+import { auth, googleProvider } from '/firebase'
+import { createUserWithEmailAndPassword, signInWithPopup } from 'firebase/auth';
+import Google from "../assets/icons/Google";
+
+
 
 
 export default function Signup() {
-
+    
     const formik = useFormik({
         initialValues: {
             fullName: "",
@@ -32,16 +37,29 @@ export default function Signup() {
             .oneOf([Yup.ref('password'), null], 'Must match "password"')
             .required("Required"),
                 }),
-        onSubmit: (values) => {
-            console.log( values)
-        },
+        onSubmit: async (values) => {
+            try {
+                await createUserWithEmailAndPassword( auth, values.email, values.password);
+                console.log( values.email, values.password);
+            } catch (error) {
+                // const firbaseError = "Signup Error";
+                }
+            },
     });
+
+async function handleEmail() {
+    try {
+        await signInWithPopup(auth, googleProvider);
+    } catch (error) {
+        // const firebaseError = "Signup Error";
+    }
+    }
 
 
 return (
 
 <div className= "h-full flex">
-    <div className="flex flex-col justify-between m-auto mt-3 p-3 w-4/5 bg-purple-100  mb-5 md:flex-row rounded-md">
+    <div className="flex flex-col justify-between m-auto mt-24 p-3 w-4/5 bg-purple-100 mb-5 md:mt-5  md:flex-row rounded-md">
         <div className="bg-purple-400 hidden  p-5 rounded-md md:w-1/2  md:block">
         <h1 className="text-2xl font-pacifico text-black">Task-Tern</h1>
         <h2 className="text-3xl mt-12 font-pacifico text-black mb-7 md:mb-9">From chaos to control: Transform your life with our seamless todo app.</h2>
@@ -54,6 +72,7 @@ return (
             <p className="mb-7">Create your account</p>
 
             <form className="flex flex-col" onSubmit={formik.handleSubmit}>
+                {/* {firebaseError? <p>{firebaseError}</p> : null} */}
                 <span className="flex flex-col mb-5">
                 <label htmlFor="fullName" className="block mb-2 text-sm font-medium">Full name</label>
                 <input 
@@ -108,8 +127,16 @@ return (
                 />
                 {formik.touched.confirmPassword && formik.errors.confirmPassword ? <p className= "text-right text-red-500 font-bold text-sm">{formik.errors.confirmPassword}</p> : null}
                 </span>
+                
+                <button type="submit" className="p-3 my-3 mb-2 text-lg border border-black rounded-md hover:bg-black hover:text-white hover:font-bold md:px-7 md:mx-0 " >Sign Up</button>
 
-                <button type="submit" className="p-3 my-3 mb-2 text-lg border border-black rounded-md hover:bg-black hover:text-white hover:font-bold md:px-7 md:mx-0 ">Sign Up</button>
+                <p className="font-semibold text-sm text-center my-2">
+                    - Or continue with -
+                </p>
+                <span className='flex content-center justify-center hover:bg-black hover:text-white hover:font-bold p-2 rounded-md' onClick ={handleEmail}>
+                        <Google/>
+                        <p className=" font-medium text-lg text-center mb-3"> Google</p> 
+                    </span>
             </form>
 
             <p className="text-center">Have an account? 
